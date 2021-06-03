@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <SCRIPT LANGUAGE="javascript">
+        var number=window.prompt("樹的層數");
+        for(var column=1; column <= number; column++){
+            for(var draw_space=1; draw_space<= number - column ; draw_space++){
+            document.write("&nbsp&nbsp");
+            }
+            for(var draw_star=1; draw_star<= 2 * column-1; draw_star++){
+                document.write("*");
+            }
+            document.write("<br />");
+        }
+        for(var column=0;column<number;column++){
+            for(draw_space=1;draw_space<=number;draw_space++){
+                if(draw_space<number){
+                    document.write("&nbsp&nbsp");  
+                }else{
+                    document.write("*");  
+                }
+            }
+            document.write("<br />");
+        }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
